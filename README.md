@@ -11,7 +11,7 @@ One thing my table group had in common was that we were all children of immigran
 ## W2
 Floats are the variable category for variables that are set to decimal numbers. Since int is only for integers, bools are for true and false statements, and strings are for displayed text, we wouldn't use those because it's categorizing the variable wrong. If you do that you'll get an error.
 The _bounce variable is an int because the bounces are counted as integers (whole numbers), they wouldn't be float because that variable is for decimal numbers. It wouldn't be bool because that's for true/false statements and it wouldn't be string because that's for displayed text.
-The error was that there was no semicolon at the end of the line. 
+The error for Step 4 was that there was no semicolon at the end of the line. 
 
 ## Open-Source Assets
 ### W1
