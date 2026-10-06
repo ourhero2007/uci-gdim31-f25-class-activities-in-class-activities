@@ -5,7 +5,8 @@ One thing my table group had in common was that we were all children of immigran
 
 ### Activity 2
 1. Unlike when the camera was the child of the Cat, the camera no longer follows the cat wherever it moves. It stays in the same position because it's not connected to the Cat GameObject.
-2. (itch.io link)[https://ourhero2007.itch.io/i-am-a-cat] 
+
+2. https://ourhero2007.itch.io/i-am-a-cat
 
 ## W2
 
