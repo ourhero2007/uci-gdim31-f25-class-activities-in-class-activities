@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
 using UnityEngine;
 
@@ -95,7 +96,8 @@ public class CatW3 : MonoBehaviour
             // Below this comment, CALL the method named DecreaseHealth.
             // Notice this method's return type is void- that means we don't
             //      have to store the result anywhere.
-            
+
+            DecreaseHealth();
 
             // STEP 2 ---------------------------------------------------------
 
@@ -104,7 +106,13 @@ public class CatW3 : MonoBehaviour
             // IF the cat's health is below or equal to 0, AND
             //      the _destroyCatWhenDead flag is true,
             // then CALL the DestroyCat method.
-            //
+
+            if(_health <= 0 && _destroyCatWhenDead == true) {
+
+                DestroyCat();
+
+            }
+
             // Try toggling the Destroy Cat When Dead setting on the Inspector,
             //      and see how the cat is removed ONLY when it's checked!
             
@@ -121,21 +129,20 @@ public class CatW3 : MonoBehaviour
     //
     // In this method:
     // 1. Decrease the value of _health by one point.
-    // 2. Uncomment and fix the next line so that it change the value of
-    //      _healthText.text to display "health = " and the new value of _health.
-    //    '_healthText' is a TMP_Text Component, and 'text' is the variable that
-    //     decides the text that displays in the UI for this Component.
-    //      Hint: there's just one operator missing!
+
     private void DecreaseHealth()
     {
         // write Step 3 below this comment!
+        _health--;
 
+        _healthText.text = "health = " + _health;
 
         // STEP 5 -------------------------------------------------------------
         // Once you've finished Step 4, CALL the GetHealthSpeechText method
         //      and store the result in _speechText's text variable.
         // This will look very similar to the above line to change _healthText ;)
 
+        _speechText.text = GetHealthSpeechText();
 
         // STEP 5 -------------------------------------------------------------
     }
@@ -153,11 +160,19 @@ public class CatW3 : MonoBehaviour
     //      return "OH NO!".
     // 2. Otherwise, return "ouch".
 
-    //private ??? GetHealthSpeechText()
-    //{
+    private string GetHealthSpeechText()
+    {
         // put the method body here!
-        
-    //}
+        if (_health < _maxHealth/2.0f) {
+
+            return "OH NO!";
+        } 
+        else {
+
+            return "ouch!";
+        }
+
+    }
     
     // STEP 4 -----------------------------------------------------------------
 
@@ -169,6 +184,7 @@ public class CatW3 : MonoBehaviour
         //      of the ball's ballRenderer's color variable.
         // This means you'll need to use the '.' twice to get to the color :)
 
+        _spriteRenderer.color = ball.ballRenderer.color;
 
         // STEP 7 -------------------------------------------------------------
     }

@@ -13,6 +13,27 @@ Floats are the variable category for variables that are set to decimal numbers. 
 The _bounce variable is an int because the bounces are counted as integers (whole numbers), they wouldn't be float because that variable is for decimal numbers. It wouldn't be bool because that's for true/false statements and it wouldn't be string because that's for displayed text.
 The error for Step 4 was that there was no semicolon at the end of the line. 
 
+## W3 
+### Activity 1 - Table 6 
+Imagine we need to design a method to perform the following function. What would you make the parameters (input) and return type (output) of this method?
+1. My answer: Parameters would be float for friendship level and boolean for whether the player knows the character's secret. Friendship level would most likely be measured by a certain number, and the question of knowing the character's secret is a yes/no (AKA true/false) question. Return type would be string for the dialog.
+
+	Class answer: public string GetResponse(int/float friendshipLevel, bool knowsSecret)
+
+2. My answer: Parameters would be float for the percentage numbers, and the return type would be void. 
+
+	Class answer: void SetLightDimness(float sanityLevel) 
+
+3. My answer: Parameters would be float for time, and the return type would be boolean. 
+
+	Class answer: public bool DidHitBeat(float timeHit)
+
+### Activity 2 - Table 6 
+Classes are like the blueprints for an architectural project, while the Components are the physical building materials we are putting together to make the building, member variables are the certain traits or style of the building, and methods are the tools we use to build.
+
+### Activity 3 
+The balls get extremely bright the more they bounce because the GetColorMultiplier method multiplies how much the color increases intensity which means it increases exponentially. 
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
