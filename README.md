@@ -34,6 +34,10 @@ Classes are like the blueprints for an architectural project, while the Componen
 ### Activity 3 
 The balls get extremely bright the more they bounce because the GetColorMultiplier method multiplies how much the color increases intensity which means it increases exponentially. 
 
+## W4 - Table 6 
+1. We added the Rigidbody component to the Cat and SoccerBall gameobjects, and checked Is Trigger for the Collider component on the Goal gameobject. This is because we want the game to know when the ball has gone through the goal, but we don't want there to be a physical block that stops the ball from entering. So instead of just a Collider, the Goal is also marked as a Trigger. We use Rigidbody on the Cat and SoccerBall because when they interact we want them to follow game physics.  
+2. Despite writing the code for updating points and the point text, when testing it did not update. This was because I did not properly write the code for updating the points text, which I figured out and fixed. 
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
