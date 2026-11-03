@@ -38,6 +38,15 @@ The balls get extremely bright the more they bounce because the GetColorMultipli
 1. We added the Rigidbody component to the Cat and SoccerBall gameobjects, and checked Is Trigger for the Collider component on the Goal gameobject. This is because we want the game to know when the ball has gone through the goal, but we don't want there to be a physical block that stops the ball from entering. So instead of just a Collider, the Goal is also marked as a Trigger. We use Rigidbody on the Cat and SoccerBall because when they interact we want them to follow game physics.  
 2. Despite writing the code for updating points and the point text, when testing it did not update. This was because I did not properly write the code for updating the points text, which I figured out and fixed. 
 
+## W5 - NO CLASS
+
+## W6 
+We need to create a class called DeerW5. How do we do that?
+
+Plan: We need MonoBehavior after setting the class in order to make it editable in Unity. The member variables we need are the Transform that sets the GameObject the Deer walks towards, movement speed of the deer. The methods we would need are Start(), Update(), GetComponent<>. Start() is for telling the deer to start moving and where it moves, Update() is for the deer walking towards the GameObject, GetComponent<> is to get the NavMeshAgent so we can attach it to the deer. 
+
+Result: We ended up not really needing the movement speed member variable or the Update method, but we needed another method, SetDestination.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
