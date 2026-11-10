@@ -87,7 +87,7 @@ public class BatManager : MonoBehaviour
             }
             else
             {
-                _bats[i].DisableChase(_playerTransform);
+                _bats[i].DisableChase();
             }
 
         }
@@ -121,7 +121,7 @@ public class BatManager : MonoBehaviour
         // The first argument to SpawnReactionUI is same bat in the parameters
         //      of CreateReactions.
 
-        int randomIndex = Random.Range(0, _messages.Length - 1);
+        int randomIndex = Random.Range(0, 5);
         string message = _messages[randomIndex];
         SpawnReactionUI(bat, message);
         

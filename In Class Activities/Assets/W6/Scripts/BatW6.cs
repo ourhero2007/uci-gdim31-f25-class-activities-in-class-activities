@@ -12,7 +12,7 @@ public class BatW6 : MonoBehaviour
         _playerTransform = player;
     }
 
-    public void DisableChase(Transform player)
+    public void DisableChase()
     {
         enabled = false;
     }
