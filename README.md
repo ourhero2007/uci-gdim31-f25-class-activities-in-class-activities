@@ -47,6 +47,12 @@ Plan: We need MonoBehavior after setting the class in order to make it editable 
 
 Result: We ended up not really needing the movement speed member variable or the Update method, but we needed another method, SetDestination.
 
+## W7
+Bat W6 Class 
+
+Plan: Speed member variable, set Cat transform variable and bat transform variable. Methods needed would be Update for the bat's actions that happen based on the player input which happens frame by frame, and Enabled for when the bat starting and stopping chasing the player.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
