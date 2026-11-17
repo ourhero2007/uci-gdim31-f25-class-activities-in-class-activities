@@ -52,6 +52,8 @@ Bat W6 Class
 
 Plan: Speed member variable, set Cat transform variable and bat transform variable. Methods needed would be Update for the bat's actions that happen based on the player input which happens frame by frame, and Enabled for when the bat starting and stopping chasing the player.
 
+## W8 
+The code used transform.position, which refers to the position of the Muskrat relative to the global space instead of local space, which is what we want to use to control the Muskrat's movement. So instead of adding to transform.position to move it forward, we use the transform.Translate method and pass in movement * Vector3.forward * _moveSpeed * Time.deltaTime as an argument. This will change it to moving on a local scale instead of global.
 
 ## Open-Source Assets
 ### W1
